@@ -1,0 +1,15 @@
+<html>
+<h1>Category {{ category_id }}</h1>
+{% for el in products %}
+<p>
+    <div>{{ el.name }}</div>
+    <div>{{ el.price }}</div>
+    <div>{{ el.description }}</div>
+    {% if el.picture%}
+    <!-- TODO: make it resizeable PILLOW -->
+    <img src="{{ el.picture.url }}" alt=""> {% endif %}
+</p>
+{% endfor %}
+
+
+</html>

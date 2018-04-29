@@ -1,0 +1,22 @@
+<!-- recursive function to sort categories
+{% macro traverse(categories) -%}
+<ol></ol>
+ {% if (isinstance(categories, list)) %}
+        {% for category in categories %}
+            <ol>{{ traverse(category) }}</ol>
+        {% endfor %}
+    {% endif %} -->
+<!-- {% if (isinstance(categories, list)) %}
+        {% for category in categories %}
+            <ol>{{ traverse(category) }}</ol>
+        {% endfor %}
+    {% elif (isinstance(categories, dict)) %}
+        <div>{{ el["data"]["name"] }}</div>
+        {% if category["children"] %}
+            <ol>
+                 {% for el in category["children"] %}
+                    <ol></ol>
+                {% endfor %}
+            </ol>
+    {% endif %} -->
+<!-- {%- endmacro %}  -->

@@ -23,4 +23,5 @@ from shop_project import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^categories/', include('categories.urls')),
+    url(r'^cart/', include('cart_app.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
